@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        double kg, boy, vki;
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Lutfen Kilonuzu Giriniz : ");
+        kg = scan.nextDouble();
+
+        System.out.print("Lutfen Boyunuzu Virgul Kullanarak Metre Cinsinden Giriniz : ");
+        boy = scan.nextDouble();
+
+        vki = kg / (boy * boy);
+
+        System.out.print("Vucut Kitle Indeksiniz : " + vki);
+    }
+}

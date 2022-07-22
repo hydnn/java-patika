@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args){
+
+        double math, phy, che, tur, history, music;
+
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Matematik notunu gir :");
+        math = scanner.nextDouble();
+
+        System.out.print("Fizik notunuzu giriniz :");
+        phy = scanner.nextDouble();
+
+        System.out.print("Kimya notunuzu giriniz :");
+        che = scanner.nextDouble();
+
+        System.out.print("Türkçe notuzunu giriniz :");
+        tur = scanner.nextDouble();
+
+        System.out.print("Tarih notuzunu giriniz :");
+        history = scanner.nextDouble();
+
+        System.out.print("Müzik notuzunu giriniz :");
+        music = scanner.nextDouble();
+
+
+        double result = (math + phy + che + tur + history + music)/6;
+
+        System.out.println("Not ortalamanız : " + result);
+
+        String valid = result >= 60 ? "geçti" : "kaldı";
+        System.out.println(valid);
+
+
+
+    }
+}

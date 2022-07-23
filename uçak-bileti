@@ -9,17 +9,16 @@ public class project {
         Scanner input = new Scanner(System.in);
         System.out.print("Mesafeyi KM olarak giriniz:");
         km = input.nextInt();
+
         if (km < 1) {
             System.out.print("Hatalı bir değer girdiniz!");
         } else {
             System.out.print("Yolcunun yaşını giriniz: ");
         }
         yType = input.nextInt();
+
         if (yType > 0){
-            if (yType <= 1){
-                System.out.print("Hatalı bir değer girdiniz!");
-            }
-            else if (yType >= 1 && yType <= 12) {
+             if (yType >= 1 && yType <= 12) {
                 System.out.print("1= Tek Yön 2=Gidiş Dönüş:");
                 sType = input.nextInt();
                 switch (sType) {
@@ -41,7 +40,8 @@ public class project {
                     default:
                         System.out.print("Hatalı bir değer girdiniz!");
                 }
-            } else if (yType >= 13 && yType <= 24) {
+            }
+             else if (yType >= 13 && yType <= 24) {
                 System.out.print("1= Tek Yön 2=Gidiş Dönüş:");
                 sType = input.nextInt();
                 switch (sType) {
@@ -62,7 +62,8 @@ public class project {
                     default:
                         System.out.print("Hatalı bir değer girdiniz!");
                 }
-            } else if (yType >= 25 && yType <= 65) {
+            }
+             else if (yType >= 25 && yType <= 65) {
                 System.out.print("1= Tek Yön 2=Gidiş Dönüş:");
                 sType = input.nextInt();
                 switch (sType) {
@@ -79,7 +80,8 @@ public class project {
                     default:
                         System.out.print("Hatalı bir değer girdiniz!");
                 }
-            } else if (yType > 65) {
+            }
+             else if (yType > 65) {
                 System.out.print("1= Tek Yön 2=Gidiş Dönüş:");
                 sType = input.nextInt();
                 switch (sType) {
@@ -103,10 +105,6 @@ public class project {
             } else {
                 System.out.print("Hatalı bir değer girdiniz!");
             }
-
-
         }
-
     }
-
 }

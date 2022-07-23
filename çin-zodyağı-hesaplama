@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class project {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int year,n;
+        System.out.print("Doğum yılını gir : ");
+        year = input.nextInt();
+        n = year%12;
+
+        switch(n){
+            case 0:
+                System.out.print("Çin zodyağı burcun : Maymun");
+                break;
+            case 1:
+                System.out.print("Çin zodyağı burcun : Horoz");
+                break;
+            case 2:
+                System.out.print("Çin zodyağı burcun : Köpek");
+                break;
+            case 3:
+                System.out.print("Çin zodyağı burcun : Domuz");
+                break;
+            case 4:
+                System.out.print("Çin zodyağı burcun : Fare");
+                break;
+            case 5:
+                System.out.print("Çin zodyağı burcun : Öküz");
+                break;
+            case 6:
+                System.out.print("Çin zodyağı burcun : Kaplan");
+                break;
+            case 7:
+                System.out.print("Çin zodyağı burcun : Tavşan");
+                break;
+            case 8:
+                System.out.print("Çin zodyağı burcun : Ejderha");
+                break;
+            case 9:
+                System.out.print("Çin zodyağı burcun : Yılan");
+                break;
+            case 10:
+                System.out.print("Çin zodyağı burcun : At");
+                break;
+            case 11:
+                System.out.print("Çin zodyağı burcun : Koyun");
+                break;
+            default:
+                break;
+        }
+
+    }
+}

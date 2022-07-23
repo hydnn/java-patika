@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class project {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int number, sum=0;
+
+        do {
+            number = input.nextInt();
+            if(number%2==0 && number%4==0){
+            sum+=number;}
+        }while(number%2==0);
+
+        System.out.print("Toplam : " + sum);
+    }
+}
+
+
+//Java döngüler ile tek bir sayı girilene kadar kullanıcıdan girişleri kabul eden ve 
+//girilen değerlerden çift ve 4'ün katları olan sayıları toplayıp ekrana basan program

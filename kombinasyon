@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class project {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n, r, ntotal=1, rtotal=1, t=1;
+
+        n= input.nextInt();
+        r= input.nextInt();
+
+        for(int i=1; i<=n; i++){
+            ntotal *= i;
+        }
+
+        for(int i=1; i<=r; i++){
+            rtotal *= i;
+        }
+
+        for(int i=1; i<=n-r; i++){
+            t *= i;
+        }
+
+        double result = ntotal / rtotal * t;
+        System.out.print(result);
+    }
+}

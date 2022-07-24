@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class project {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int firstNumber, secondNumber, smallNumber, ebob = 1, ekok = 1;
+
+        firstNumber = input.nextInt();
+        secondNumber = input.nextInt();
+
+        if(firstNumber < secondNumber){
+            smallNumber = firstNumber;}
+        else{
+            smallNumber = secondNumber;}
+
+        for(int i=smallNumber; i>=1; i--){
+            if(firstNumber % i == 0 && secondNumber % i == 0){
+                ebob = i;
+                System.out.println(ebob);
+                break;
+            }
+        }
+
+       for(int j=1; j<=firstNumber*secondNumber; j++){
+            if(j % firstNumber == 0 && j % secondNumber == 0){
+                ekok = j;
+                System.out.println(ekok);
+                break;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class project {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Kaç sayı gireceksin : ");
+        int n = input.nextInt();
+
+        int buyuk=0, kucuk=0;
+
+        for(int i=1; i<=n; i++){
+            System.out.print(i + ". sayıyı gir : ");
+            int number = input.nextInt();
+            if(i==1){
+                buyuk=number;
+                kucuk=number;
+            }
+
+            if(number>buyuk){
+                buyuk = number;
+            }
+            if(number<kucuk){
+                kucuk = number;
+            }
+        }
+
+        System.out.println("En buyuk sayi : " + buyuk);
+        System.out.println("En kucuk sayi : " + kucuk);
+    }
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class project {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int number = input.nextInt();
+        p(f(number), number);
+    }
+    static int f(int x) {
+        if (x <= 0) {
+            return x;
+        } else {
+            System.out.print(x + " ");
+            return f(x - 5);
+        }
+    }
+    static int p(int x, int y) {
+        if (x > y) {
+            return x;
+        } else {
+            System.out.print(x + " ");
+            return p(x + 5, y);
+        }
+    }
+}
